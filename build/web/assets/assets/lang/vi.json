@@ -1,0 +1,30 @@
+{
+  "name": "Tiếng Việt",
+  "code": "vi_VN",
+  "texts": {
+    "language": "Ngôn ngữ",
+    "dob": "NGÀY SINH: ",
+    "phone": "SỐ ĐIỆN THOẠI: ",
+    "address": "ĐỊA CHỈ: ",
+    "about_me": "GIỚI THIỆU BẢN THÂN",
+    "vision": "ĐỊNH HƯỚNG PHÁT TRIỂN",
+    "skills": "KỸ NĂNG",
+    "education": "HỌC VẤN",
+    "projects": "DỰ ÁN",
+    "soft_skills": "Kỹ Năng Mềm",
+    "contact": "THÔNG TIN LIÊN LẠC",
+    "my_name": "HUỲNH HƯNG PHÁT",
+    "my_address": "20/6 Đường Kha Vạn Cân, Phường Hiệp Bình Chánh, Quận Thủ Đức, Thành phố Hồ Chí Minh.",
+    "my_about": "Tôi là một nhà phát triển Flutter nhiệt huyết, với một năm kinh nghiệm phát triển front-end, tập trung vào việc cải thiện và nâng cao thiết kế UX/UI cho các ứng dụng web và Android. Mục tiêu của tôi là tạo ra giao diện trực quan và hấp dẫn, dễ tiếp cận hơn và thân thiện với người dùng. Nâng cao hiệu suất để đảm bảo ứng dụng hoạt động nhanh và ổn định hơn. Tôi có kiến thức cơ bản về REST API với Golang sử dụng Gin/Gorm với MySQL và đã hoàn thành khóa học Go Tour để nâng cao hiểu biết về Golang. Tôi cũng đang củng cố kỹ năng về bảo mật để bảo vệ dữ liệu và quyền riêng tư của người dùng. Ngoài ra, tôi mong muốn cải thiện kỹ năng làm việc nhóm để hợp tác hiệu quả hơn trong công việc.",
+    "my_frontend": "Flutter (Web, Android): Xây dựng trang web responsive hoặc ứng dụng Android bằng Flutter sử dụng Getx để State manager, custom nhiều theme, ứng dụng đa ngôn ngữ",
+    "my_backend": "Golang (Gin/Gorm), NodeJs(Express), Firebase, Golang",
+    "my_database": "Mysql, MongoDB, Firestore, Redis",
+    "my_soft_skill": "Sáng tạo, Giải quyết vấn đề, Áp dụng đổi mới, Tự thúc đẩy bản thân.",
+    "my_education": "Đại học Nông Lâm (09/2017 - 06/2022)\nTốt nghiệp kỹ sư Công nghệ thông tin với điểm số: 2.4/4.0.",
+    "my_project": "Github Page: vemines.github.io.",
+    "my_project_1": "NodeJs",
+    "my_project_detail": "Danh sách Widget/Package hữu ích để code tốt hơn.",
+    "my_project_1_detail": "Tổng hợp kiến thức về Nodejs, dùng để tạo RestApi, kết nối AWS (S3, Cloudfront), RabbitMQ, Cloudinary và một số code khác về NodeJs",
+    "my_vision": "Cải thiện tối ưu backend/frontend.\nTăng cường Hiệu suất/Bảo mật ứng dụng\nHọc hỏi thêm nhều công nghệ mới.\nCải thiện tốc độ code và viết code tốt hơn."
+  }
+}
