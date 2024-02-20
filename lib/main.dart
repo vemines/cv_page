@@ -23,7 +23,7 @@ class MyApp extends GetView<BreakPointController> {
   Widget build(BuildContext context) {
     controller.checkBreakPoint(context.width);
     return GetMaterialApp(
-      title: "VeMines Cv",
+      title: "VeMines CV",
       debugShowCheckedModeBanner: false,
       // theme
       theme: ThemeData.light(),

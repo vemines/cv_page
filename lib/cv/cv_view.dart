@@ -16,7 +16,7 @@ class CvView extends GetView<CvController> {
       body: ListView(
         children: [
           CustomAppBar(
-            title: "VeMines Cv",
+            title: "VeMines CV",
             centerTitle: bp.isDesktop,
           ),
           Container(
