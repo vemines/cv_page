@@ -23,8 +23,8 @@ class BreakPointController extends GetxController {
     }
   }
 
-  bool get isDesktop {
-    return screenType.value == BreakPointScreen.extra || screenType.value == BreakPointScreen.large;
+  RxBool get isDesktop {
+    return (screenType.value == BreakPointScreen.extra || screenType.value == BreakPointScreen.large).obs;
   }
 
   /// return padding by [BreakPointScreen]
