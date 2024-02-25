@@ -11,58 +11,57 @@ class CvView extends GetView<CvController> {
   @override
   Widget build(BuildContext context) {
     var bp = Get.find<BreakPointController>();
+    bool isDestop = bp.isDesktop(context.width);
 
     return Scaffold(
-      body: Obx(
-        () => ListView(
-          children: [
-            CustomAppBar(
-              title: "VeMines CV",
-              centerTitle: bp.isDesktop.value,
+      body: ListView(
+        children: [
+          CustomAppBar(
+            title: "VeMines CV",
+            centerTitle: isDestop,
+          ),
+          Container(
+            padding: EdgeInsets.only(
+              left: 1.scaledPadd,
+              right: 1.scaledPadd,
+              bottom: 1.scaledPadd,
             ),
-            Container(
-              padding: EdgeInsets.only(
-                left: 1.scaledPadd,
-                right: 1.scaledPadd,
-                bottom: 1.scaledPadd,
-              ),
-              child: bp.isDesktop.value
-                  ? Material(
-                      type: MaterialType.card,
-                      surfaceTintColor: context.theme.colorScheme.surfaceTint,
-                      elevation: 8,
-                      child: Padding(
-                        padding: EdgeInsets.only(top: 1.scaledPadd),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Expanded(flex: 3, child: LeftComponents()),
-                            sizeBoxW(0.75),
-                            VerticalDivider(
-                              width: 2,
-                              color: Get.isDarkMode ? white.withOpacity(0.4) : black.withOpacity(0.4),
-                            ),
-                            sizeBoxW(0.75),
-                            const Expanded(flex: 7, child: RightComponents()),
-                          ],
-                        ),
-                      ),
-                    )
-                  : Material(
-                      type: MaterialType.card,
-                      surfaceTintColor: context.theme.colorScheme.surfaceTint,
-                      elevation: 8,
-                      child: Column(
+            child: isDestop
+                ? Material(
+                    type: MaterialType.card,
+                    surfaceTintColor: context.theme.colorScheme.surfaceTint,
+                    elevation: 8,
+                    child: Padding(
+                      padding: EdgeInsets.only(top: 1.scaledPadd),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const LeftComponents(),
-                          sizeBoxH(1),
-                          const RightComponents(),
+                          const Expanded(flex: 3, child: LeftComponents()),
+                          sizeBoxW(0.75),
+                          VerticalDivider(
+                            width: 2,
+                            color: Get.isDarkMode ? white.withOpacity(0.4) : black.withOpacity(0.4),
+                          ),
+                          sizeBoxW(0.75),
+                          const Expanded(flex: 7, child: RightComponents()),
                         ],
                       ),
                     ),
-            ),
-          ],
-        ),
+                  )
+                : Material(
+                    type: MaterialType.card,
+                    surfaceTintColor: context.theme.colorScheme.surfaceTint,
+                    elevation: 8,
+                    child: Column(
+                      children: [
+                        const LeftComponents(),
+                        sizeBoxH(1),
+                        const RightComponents(),
+                      ],
+                    ),
+                  ),
+          ),
+        ],
       ),
     );
   }

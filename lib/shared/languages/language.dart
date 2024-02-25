@@ -1,10 +1,10 @@
 // ignore_for_file: constant_identifier_names
 
-import 'package:cv_page/shared/consts/value_const.dart';
-import 'package:get/get.dart';
-
-import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
+
+import 'package:cv_page/shared/consts/value_const.dart';
+import 'package:flutter/services.dart' show rootBundle;
+import 'package:get/get.dart';
 
 import '../utils/util.dart';
 

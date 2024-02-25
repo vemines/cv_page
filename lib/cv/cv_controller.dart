@@ -1,4 +1,4 @@
-import 'package:cv_page/shared/extensions/extensions.dart';
+import '../shared/extensions/extensions.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 
