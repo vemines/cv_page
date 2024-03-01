@@ -36,11 +36,4 @@ class CvController extends GetxController {
   Future<void> launch(String url) async {
     await launchUrl(Uri.parse(url));
   }
-
-  // for take picture
-  RxBool sc = false.obs;
-
-  void doSc() {
-    sc.value = true;
-  }
 }

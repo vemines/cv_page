@@ -63,6 +63,9 @@ class LocaleKeys {
   static const param = "param";
   // CV Translation
   static const dob = "dob";
+  static const github = "github";
+  static const my_phone = "my_phone";
+  static const my_email = "my_email";
   static const phone = "phone";
   static const address = "address";
   static const about_me = "about_me";
@@ -80,8 +83,11 @@ class LocaleKeys {
   static const my_database = "my_database";
   static const my_soft_skill = "my_soft_skill";
   static const my_education = "my_education";
+  static const my_education_school = "my_education_school";
   static const my_project = "my_project";
+  static const my_project_url = "my_project_url";
   static const my_project_1 = "my_project_1";
+  static const my_project_1_url = "my_project_1_url";
   static const my_project_detail = "my_project_detail";
   static const my_project_1_detail = "my_project_1_detail";
   static const my_vision = "my_vision";

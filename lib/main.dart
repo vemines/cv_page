@@ -9,16 +9,14 @@ Future<void> main() async {
   // init languages
   await AppLanguage.initLanguages();
   // init hive
-  Get.put(BreakPointController());
   runApp(const MyApp());
 }
 
-class MyApp extends GetView<BreakPointController> {
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    controller.checkBreakPoint(context.width);
     return GetMaterialApp(
       title: "VeMines CV",
       debugShowCheckedModeBanner: false,

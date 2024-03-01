@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../shared/shared.dart';
 import 'widgets.dart';
@@ -9,6 +10,7 @@ class RightComponents extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final TextStyle headerStyle = context.textTheme.headlineMedium!.copyWith(fontFamily: headerFont);
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 1.scaledPadd),
       child: Column(
@@ -18,66 +20,85 @@ class RightComponents extends StatelessWidget {
           sizeBoxH(1),
           Text(
             LocaleKeys.about_me.tr,
-            style: context.textTheme.headlineMedium!.copyWith(fontFamily: headerFont),
+            style: headerStyle,
           ),
           sizeBoxH(1),
           divider4B(),
           sizeBoxH(1),
-          Text(
-            LocaleKeys.my_about.tr,
-            style: context.textTheme.bodyLarge,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+              LocaleKeys.my_about.tr.indent,
+              style: context.textTheme.bodyLarge!.copyWith(),
+            ),
           ),
           sizeBoxH(3),
           const _SkillSection(),
           sizeBoxH(3),
           Text(
-            LocaleKeys.education.tr,
-            style: context.textTheme.headlineMedium!.copyWith(fontFamily: headerFont),
-          ),
-          sizeBoxH(1),
-          divider4B(),
-          sizeBoxH(1),
-          Text(
-            LocaleKeys.my_education.tr,
-            style: context.textTheme.bodyLarge,
-          ),
-          sizeBoxH(3),
-          Text(
             LocaleKeys.projects.tr,
-            style: context.textTheme.headlineMedium!.copyWith(fontFamily: headerFont),
+            style: headerStyle,
           ),
           sizeBoxH(1),
           divider4B(),
           sizeBoxH(1),
-          Text(
-            LocaleKeys.my_project.tr,
-            style: context.textTheme.headlineSmall,
+          InkWell(
+            overlayColor: const MaterialStatePropertyAll<Color>(Colors.transparent),
+            onTap: () => launchUrl(Uri.parse(LocaleKeys.my_project_url.tr)),
+            child: Text(
+              LocaleKeys.my_project.tr,
+              style: context.textTheme.headlineSmall,
+            ),
           ),
           sizeBoxH(0.5),
           Text(
-            LocaleKeys.my_project_detail.tr,
+            LocaleKeys.my_project_detail.tr.indent,
             style: context.textTheme.bodyLarge,
           ),
           sizeBoxH(1.5),
-          Text(
-            LocaleKeys.my_project_1.tr,
-            style: context.textTheme.headlineSmall,
+          InkWell(
+            overlayColor: const MaterialStatePropertyAll<Color>(Colors.transparent),
+            onTap: () => launchUrl(Uri.parse(LocaleKeys.my_project_1_url.tr)),
+            child: Text(
+              LocaleKeys.my_project_1.tr,
+              style: context.textTheme.headlineSmall,
+            ),
           ),
           sizeBoxH(0.5),
           Text(
-            LocaleKeys.my_project_1_detail.tr,
+            LocaleKeys.my_project_1_detail.tr.indent,
             style: context.textTheme.bodyLarge,
           ),
           sizeBoxH(3),
           Text(
             LocaleKeys.vision.tr,
-            style: context.textTheme.headlineMedium!.copyWith(fontFamily: headerFont),
+            style: headerStyle,
+          ),
+          sizeBoxH(1),
+          divider4B(),
+          sizeBoxH(1),
+          Padding(
+            padding: const EdgeInsets.only(left: 30.0),
+            child: Text(
+              LocaleKeys.my_vision.tr,
+              style: context.textTheme.bodyLarge,
+            ),
+          ),
+          sizeBoxH(3),
+          Text(
+            LocaleKeys.education.tr,
+            style: headerStyle,
           ),
           sizeBoxH(1),
           divider4B(),
           sizeBoxH(1),
           Text(
-            LocaleKeys.my_vision.tr,
+            LocaleKeys.my_education_school.tr,
+            style: context.textTheme.headlineSmall,
+          ),
+          sizeBoxH(1),
+          Text(
+            LocaleKeys.my_education.tr.indent,
             style: context.textTheme.bodyLarge,
           ),
           sizeBoxH(2),
@@ -107,9 +128,9 @@ class _SkillSection extends StatelessWidget {
           "Frontend:",
           style: context.textTheme.titleLarge!.copyWith(fontFamily: headerFont),
         ),
-        sizeBoxH(0.5),
+        sizeBoxH(1),
         Text(
-          LocaleKeys.my_frontend.tr,
+          LocaleKeys.my_frontend.tr.indent,
           style: context.textTheme.bodyLarge,
         ),
         sizeBoxH(1.5),
@@ -117,9 +138,9 @@ class _SkillSection extends StatelessWidget {
           "Database:",
           style: context.textTheme.titleLarge!.copyWith(fontFamily: headerFont),
         ),
-        sizeBoxH(0.5),
+        sizeBoxH(1),
         Text(
-          LocaleKeys.my_database.tr,
+          LocaleKeys.my_database.tr.indent,
           style: context.textTheme.bodyLarge,
         ),
         sizeBoxH(1.5),
@@ -127,9 +148,9 @@ class _SkillSection extends StatelessWidget {
           "Backend: ",
           style: context.textTheme.titleLarge!.copyWith(fontFamily: headerFont),
         ),
-        sizeBoxH(0.5),
+        sizeBoxH(1),
         Text(
-          LocaleKeys.my_backend.tr,
+          LocaleKeys.my_backend.tr.indent,
           style: context.textTheme.bodyLarge,
         ),
         sizeBoxH(1.5),
@@ -137,9 +158,9 @@ class _SkillSection extends StatelessWidget {
           LocaleKeys.soft_skills.tr,
           style: context.textTheme.titleLarge!.copyWith(fontFamily: headerFont),
         ),
-        sizeBoxH(0.5),
+        sizeBoxH(1),
         Text(
-          LocaleKeys.my_soft_skill.tr,
+          LocaleKeys.my_soft_skill.tr.indent,
           style: context.textTheme.bodyLarge,
         ),
       ],

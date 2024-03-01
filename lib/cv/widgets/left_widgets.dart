@@ -19,7 +19,8 @@ class LeftComponents extends GetView<CvController> {
           Obx(
             () => Align(
               alignment: Alignment.topCenter,
-              child: GestureDetector(
+              child: InkWell(
+                overlayColor: const MaterialStatePropertyAll<Color>(Colors.transparent),
                 onTap: () => controller.changeImage(),
                 child: SizedBox(
                   height: 350,
@@ -34,27 +35,31 @@ class LeftComponents extends GetView<CvController> {
           sizeBoxH(1),
           FittedBox(
             fit: BoxFit.fitWidth,
-            child: Text(
-              LocaleKeys.my_name.tr,
-              style: context.textTheme.headlineLarge!.copyWith(fontFamily: headerFont),
+            child: InkWell(
+              overlayColor: const MaterialStatePropertyAll<Color>(Colors.transparent),
+              onTap: () => LocaleKeys.my_name.tr.saveToClipBoard(),
+              child: Text(
+                LocaleKeys.my_name.tr,
+                style: context.textTheme.headlineLarge!.copyWith(fontFamily: headerFont),
+              ),
             ),
           ),
-          sizeBoxH(1),
+          sizeBoxH(2),
           _LeftRowInfo(
             title: LocaleKeys.dob.tr,
             content: "20/05/1999",
           ),
           sizeBoxH(1),
-          const _LeftRowInfo(
+          _LeftRowInfo(
             title: "EMAIL: ",
-            content: "vemines@outlook.com",
-            clipboard: "vemines@outlook.com",
+            content: LocaleKeys.my_email.tr,
+            clipboard: LocaleKeys.my_email.tr,
           ),
           sizeBoxH(1),
-          const _LeftRowInfo(
+          _LeftRowInfo(
             title: "Github: ",
-            content: "https://github.com/vemines",
-            url: "https://github.com/vemines",
+            content: LocaleKeys.github.tr,
+            url: LocaleKeys.github.tr,
           ),
           sizeBoxH(1),
           _LeftRowInfo(
@@ -139,11 +144,13 @@ class _LeftRowInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    const double iconSize = 20;
+    return InkWell(
       onTap: () async {
         clipboard?.saveToClipBoard();
         if (url != null) await launchUrl(Uri.parse(url!));
       },
+      overlayColor: const MaterialStatePropertyAll<Color>(Colors.transparent),
       child: Row(
         children: [
           Expanded(
@@ -156,13 +163,33 @@ class _LeftRowInfo extends StatelessWidget {
           ),
           sizeBoxW(1),
           Expanded(
-            flex: 2,
-            child: Text(
-              content,
-              style: context.textTheme.bodyLarge!.copyWith(fontWeight: FontWeight.bold),
-              maxLines: null,
-              softWrap: true,
-              overflow: TextOverflow.clip,
+            flex: context.width > 1000 ? 3 : 2,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Flexible(
+                  child: Text(
+                    content,
+                    style: context.textTheme.bodyLarge!.copyWith(
+                      fontWeight: FontWeight.bold,
+                      decoration: url != null ? TextDecoration.underline : null,
+                      decorationThickness: 1.5,
+                    ),
+                    maxLines: null,
+                    softWrap: true,
+                    overflow: TextOverflow.clip,
+                  ),
+                ),
+                if (clipboard != null)
+                  IconButton(
+                    onPressed: () async {
+                      clipboard?.saveToClipBoard();
+                      if (url != null) await launchUrl(Uri.parse(url!));
+                    },
+                    iconSize: iconSize,
+                    icon: const Icon(Icons.copy),
+                  )
+              ],
             ),
           ),
         ],

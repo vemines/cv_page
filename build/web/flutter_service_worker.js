@@ -8,8 +8,8 @@ const RESOURCES = {"assets/AssetManifest.bin": "4acc412ae4fd00d57b2383d65652e1f4
 "assets/AssetManifest.json": "b7fcd28a6390923090745ee1ebba61eb",
 "assets/assets/dotenv": "3de204ff6f06d9377f5e03fdf2ad2c54",
 "assets/assets/jpg/1.jpg": "c0b9691d2f43b6e12c07bfbc84be0d20",
-"assets/assets/lang/en.json": "59af71b93e76d54f0bc116bd0058fd99",
-"assets/assets/lang/vi.json": "27884e585481d4ef4a802652f6beb701",
+"assets/assets/lang/en.json": "917abe5ec39474c4eb3b55e675e665bc",
+"assets/assets/lang/vi.json": "8762d877fd992efb69734552a6b1d859",
 "assets/assets/lottie/404.json": "6f9a769cca1a1873afe04baf9be36525",
 "assets/assets/png/Discord.png": "18de431463bed80f435442b29b37119b",
 "assets/assets/png/Outlook.png": "59eca674afa9a89ed0cfa2ce97ab1dfd",
@@ -33,9 +33,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "4acc412ae4fd00d57b2383d65652e1f4
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "96c1b38b9aafd03bb0dd6b7d94eca240",
-"/": "96c1b38b9aafd03bb0dd6b7d94eca240",
-"main.dart.js": "de1a593164949f89d3696e199ee66955",
+"index.html": "40c8349491a3b7bc4e3765087e7bb59e",
+"/": "40c8349491a3b7bc4e3765087e7bb59e",
+"main.dart.js": "536b48159500c8b2ec4f1bcf0e614187",
 "manifest.json": "fc7ef6ad7fa8e71f7b1f8c8b8bb84700",
 "version.json": "6faabddd28334e85e7c9de143eb6f087"};
 // The application shell files that are downloaded before a service worker can

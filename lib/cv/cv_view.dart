@@ -10,15 +10,13 @@ class CvView extends GetView<CvController> {
 
   @override
   Widget build(BuildContext context) {
-    var bp = Get.find<BreakPointController>();
-    bool isDestop = bp.isDesktop(context.width);
-
+    bool bp = context.width > 1000;
     return Scaffold(
       body: ListView(
         children: [
           CustomAppBar(
             title: "VeMines CV",
-            centerTitle: isDestop,
+            centerTitle: bp,
           ),
           Container(
             padding: EdgeInsets.only(
@@ -26,7 +24,7 @@ class CvView extends GetView<CvController> {
               right: 1.scaledPadd,
               bottom: 1.scaledPadd,
             ),
-            child: isDestop
+            child: bp
                 ? Material(
                     type: MaterialType.card,
                     surfaceTintColor: context.theme.colorScheme.surfaceTint,
