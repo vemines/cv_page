@@ -59,7 +59,7 @@ class LeftComponents extends GetView<CvController> {
           _LeftRowInfo(
             title: "Github: ",
             content: LocaleKeys.github.tr,
-            url: LocaleKeys.github.tr,
+            url: "https://${LocaleKeys.github.tr}",
           ),
           sizeBoxH(1),
           _LeftRowInfo(
