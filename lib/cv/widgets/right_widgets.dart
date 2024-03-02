@@ -18,21 +18,21 @@ class RightComponents extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           sizeBoxH(1),
-          Text(
+          SelectableText(
             LocaleKeys.about_me.tr,
             style: headerStyle,
           ),
           sizeBoxH(1),
           divider4B(),
           sizeBoxH(1),
-          Text(
+          SelectableText(
             LocaleKeys.my_about.tr.indent,
             style: context.textTheme.bodyLarge!.copyWith(),
           ),
           sizeBoxH(3),
           const _SkillSection(),
           sizeBoxH(3),
-          Text(
+          SelectableText(
             LocaleKeys.projects.tr,
             style: headerStyle,
           ),
@@ -42,13 +42,13 @@ class RightComponents extends StatelessWidget {
           InkWell(
             overlayColor: const MaterialStatePropertyAll<Color>(Colors.transparent),
             onTap: () => launchUrl(Uri.parse(LocaleKeys.my_project_url.tr)),
-            child: Text(
+            child: SelectableText(
               LocaleKeys.my_project.tr,
               style: context.textTheme.headlineSmall,
             ),
           ),
           sizeBoxH(0.5),
-          Text(
+          SelectableText(
             LocaleKeys.my_project_detail.tr.indent,
             style: context.textTheme.bodyLarge,
           ),
@@ -56,18 +56,18 @@ class RightComponents extends StatelessWidget {
           InkWell(
             overlayColor: const MaterialStatePropertyAll<Color>(Colors.transparent),
             onTap: () => launchUrl(Uri.parse(LocaleKeys.my_project_1_url.tr)),
-            child: Text(
+            child: SelectableText(
               LocaleKeys.my_project_1.tr,
               style: context.textTheme.headlineSmall,
             ),
           ),
           sizeBoxH(0.5),
-          Text(
+          SelectableText(
             LocaleKeys.my_project_1_detail.tr.indent,
             style: context.textTheme.bodyLarge,
           ),
           sizeBoxH(3),
-          Text(
+          SelectableText(
             LocaleKeys.vision.tr,
             style: headerStyle,
           ),
@@ -76,25 +76,25 @@ class RightComponents extends StatelessWidget {
           sizeBoxH(1),
           Padding(
             padding: const EdgeInsets.only(left: 30.0),
-            child: Text(
+            child: SelectableText(
               LocaleKeys.my_vision.tr,
               style: context.textTheme.bodyLarge,
             ),
           ),
           sizeBoxH(3),
-          Text(
+          SelectableText(
             LocaleKeys.education.tr,
             style: headerStyle,
           ),
           sizeBoxH(1),
           divider4B(),
           sizeBoxH(1),
-          Text(
+          SelectableText(
             LocaleKeys.my_education_school.tr,
             style: context.textTheme.headlineSmall,
           ),
           sizeBoxH(1),
-          Text(
+          SelectableText(
             LocaleKeys.my_education.tr.indent,
             style: context.textTheme.bodyLarge,
           ),
@@ -114,49 +114,49 @@ class _SkillSection extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        SelectableText(
           LocaleKeys.skills.tr,
           style: context.textTheme.headlineMedium!.copyWith(fontFamily: headerFont),
         ),
         sizeBoxH(1),
         divider4B(),
         sizeBoxH(1),
-        Text(
+        SelectableText(
           "Frontend:",
           style: context.textTheme.titleLarge!.copyWith(fontFamily: headerFont),
         ),
         sizeBoxH(1),
-        Text(
+        SelectableText(
           LocaleKeys.my_frontend.tr.indent,
           style: context.textTheme.bodyLarge,
         ),
         sizeBoxH(1.5),
-        Text(
+        SelectableText(
           "Database:",
           style: context.textTheme.titleLarge!.copyWith(fontFamily: headerFont),
         ),
         sizeBoxH(1),
-        Text(
+        SelectableText(
           LocaleKeys.my_database.tr.indent,
           style: context.textTheme.bodyLarge,
         ),
         sizeBoxH(1.5),
-        Text(
+        SelectableText(
           "Backend: ",
           style: context.textTheme.titleLarge!.copyWith(fontFamily: headerFont),
         ),
         sizeBoxH(1),
-        Text(
+        SelectableText(
           LocaleKeys.my_backend.tr.indent,
           style: context.textTheme.bodyLarge,
         ),
         sizeBoxH(1.5),
-        Text(
+        SelectableText(
           LocaleKeys.soft_skills.tr,
           style: context.textTheme.titleLarge!.copyWith(fontFamily: headerFont),
         ),
         sizeBoxH(1),
-        Text(
+        SelectableText(
           LocaleKeys.my_soft_skill.tr.indent,
           style: context.textTheme.bodyLarge,
         ),
