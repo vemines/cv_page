@@ -47671,7 +47671,7 @@ f=A.b4(c,32,c)
 e=A.c9("contact")
 d=A.Z(a4).p3.f
 d.toString
-return new A.cP(new A.aO(0,10,0,10),A.jd(A.a([new A.zh(new A.a7h(this),c),a1,new A.Jj(B.zI,a3,c),a2,new A.np(s,"20/05/1999",c,c,c),r,new A.np("EMAIL: ",q,p,c,c),o,new A.np("Github: ",n,c,"https://"+m,c),l,new A.np(k,a,a,c,c),j,new A.np(i,h,g,c,c),f,A.fO(e,c,c,c,d.ma($.nO()),c),A.b4(c,16,c),B.Sf],t.p),B.aU,B.b_,B.aJ),c)}}
+return new A.cP(new A.aO(0,10,0,10),A.jd(A.a([new A.zh(new A.a7h(this),c),a1,new A.Jj(B.zI,a3,c),a2,new A.np(s,"20/05/1999",c,c,c),r,new A.np("EMAIL: ",q,p,c,c),o,new A.np("GITHUB: ",n,c,"https://"+m,c),l,new A.np(k,a,a,c,c),j,new A.np(i,h,g,c,c),f,A.fO(e,c,c,c,d.ma($.nO()),c),A.b4(c,16,c),B.Sf],t.p),B.aU,B.b_,B.aJ),c)}}
 A.a7h.prototype={
 $0(){var s,r,q=null,p=this.a,o=$.cg
 if(o==null)o=$.cg=B.an
