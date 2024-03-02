@@ -25,12 +25,9 @@ class RightComponents extends StatelessWidget {
           sizeBoxH(1),
           divider4B(),
           sizeBoxH(1),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Text(
-              LocaleKeys.my_about.tr.indent,
-              style: context.textTheme.bodyLarge!.copyWith(),
-            ),
+          Text(
+            LocaleKeys.my_about.tr.indent,
+            style: context.textTheme.bodyLarge!.copyWith(),
           ),
           sizeBoxH(3),
           const _SkillSection(),
