@@ -1,13 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:url_launcher/url_launcher.dart';
+part of "../cv_view.dart";
 
-import '../../shared/shared.dart';
-import '../cv_controller.dart';
-import 'widgets.dart';
-
-class LeftComponents extends GetView<CvController> {
-  const LeftComponents({super.key});
+class _LeftComponents extends GetView<CvController> {
+  const _LeftComponents({super.key});
 
   @override
   Widget build(BuildContext context) {

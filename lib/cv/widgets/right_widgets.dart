@@ -1,12 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:url_launcher/url_launcher.dart';
+part of "../cv_view.dart";
 
-import '../../shared/shared.dart';
-import 'widgets.dart';
-
-class RightComponents extends StatelessWidget {
-  const RightComponents({super.key});
+class _RightComponents extends StatelessWidget {
+  const _RightComponents({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +37,7 @@ class RightComponents extends StatelessWidget {
           InkWell(
             overlayColor: const MaterialStatePropertyAll<Color>(Colors.transparent),
             onTap: () => launchUrl(Uri.parse(LocaleKeys.my_project_url.tr)),
-            child: SelectableText(
+            child: Text(
               LocaleKeys.my_project.tr,
               style: context.textTheme.headlineSmall,
             ),
@@ -56,7 +51,7 @@ class RightComponents extends StatelessWidget {
           InkWell(
             overlayColor: const MaterialStatePropertyAll<Color>(Colors.transparent),
             onTap: () => launchUrl(Uri.parse(LocaleKeys.my_project_1_url.tr)),
-            child: SelectableText(
+            child: Text(
               LocaleKeys.my_project_1.tr,
               style: context.textTheme.headlineSmall,
             ),

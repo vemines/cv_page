@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../shared/shared.dart';
 import 'cv_controller.dart';
 import 'widgets/widgets.dart';
+
+part "widgets/left_widgets.dart";
+part "widgets/right_widgets.dart";
 
 class CvView extends GetView<CvController> {
   const CvView({super.key});
@@ -34,14 +38,14 @@ class CvView extends GetView<CvController> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Expanded(flex: 3, child: LeftComponents()),
+                          const Expanded(flex: 3, child: _LeftComponents()),
                           sizeBoxW(0.75),
                           VerticalDivider(
                             width: 2,
                             color: Get.isDarkMode ? white.withOpacity(0.4) : black.withOpacity(0.4),
                           ),
                           sizeBoxW(0.75),
-                          const Expanded(flex: 7, child: RightComponents()),
+                          const Expanded(flex: 7, child: _RightComponents()),
                         ],
                       ),
                     ),
@@ -52,9 +56,9 @@ class CvView extends GetView<CvController> {
                     elevation: 8,
                     child: Column(
                       children: [
-                        const LeftComponents(),
+                        const _LeftComponents(),
                         sizeBoxH(1),
-                        const RightComponents(),
+                        const _RightComponents(),
                       ],
                     ),
                   ),
