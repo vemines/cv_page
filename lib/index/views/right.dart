@@ -7,7 +7,7 @@ class _RightSection extends StatelessWidget {
   Widget build(BuildContext context) {
     final TextStyle headerStyle = context.textTheme.headlineMedium!.copyWith(fontFamily: headerFont);
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 1.scaledPadd),
+      padding: const EdgeInsets.symmetric(horizontal: Dimensions.normal),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,

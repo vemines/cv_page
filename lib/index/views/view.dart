@@ -1,5 +1,5 @@
-import 'package:cv_page/shared/constants/value.dart';
-import 'package:cv_page/shared/extensions/extensions.dart';
+import '../../shared/constants/value.dart';
+import '../../shared/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -65,43 +65,59 @@ class MainView extends GetView<MainController> {
             surfaceTintColor: colorScheme.surfaceTint,
             borderRadius: BorderRadius.circular(RadiusBorder.normal),
             elevation: 8,
-            child: bp
-                ? Padding(
-                    padding: const EdgeInsets.only(top: Dimensions.normal),
-                    child: IntrinsicHeight(
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Expanded(flex: 3, child: _LeftSection()),
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(
-                              Dimensions.normal,
-                              0,
-                              Dimensions.normal,
-                              Dimensions.normal,
-                            ),
-                            child: VerticalDivider(
-                              width: 2,
-                              color: Get.isDarkMode ? white.withOpacity(0.4) : black.withOpacity(0.4),
-                            ),
-                          ),
-                          const Expanded(flex: 7, child: _RightSection()),
-                        ],
-                      ),
-                    ),
-                  )
-                : Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: Dimensions.normal),
-                    child: Column(
-                      children: [
-                        const _LeftSection(),
-                        gapN(),
-                        const _RightSection(),
-                        gapN(),
-                      ],
-                    ),
-                  ),
+            child: bp ? const _RowDisplay() : const _ColumnDisplay(),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class _ColumnDisplay extends StatelessWidget {
+  const _ColumnDisplay();
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: Dimensions.normal),
+      child: Column(
+        children: [
+          const _LeftSection(),
+          gapN(),
+          const _RightSection(),
+          gapN(),
+        ],
+      ),
+    );
+  }
+}
+
+class _RowDisplay extends StatelessWidget {
+  const _RowDisplay();
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: Dimensions.normal),
+      child: IntrinsicHeight(
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Expanded(flex: 3, child: _LeftSection()),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                Dimensions.normal,
+                0,
+                Dimensions.normal,
+                Dimensions.normal,
+              ),
+              child: VerticalDivider(
+                width: 2,
+                color: Get.isDarkMode ? white.withOpacity(0.4) : black.withOpacity(0.4),
+              ),
+            ),
+            const Expanded(flex: 7, child: _RightSection()),
+          ],
         ),
       ),
     );

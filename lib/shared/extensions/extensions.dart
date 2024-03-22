@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
-extension PaddingExtension on num {
-  double get scaledPadd => this * 10.0;
-}
-
 extension SaveToClipboard on String {
   void showToastCopySuccess({required String text}) {
     Get.showSnackbar(

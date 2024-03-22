@@ -1,6 +1,7 @@
-import '../../shared/extensions/extensions.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../../shared/extensions/extensions.dart';
 
 class MainController extends GetxController {
   RxInt cvImageIndex = 0.obs;
