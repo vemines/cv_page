@@ -1,4 +1,4 @@
 # My CV page write with flutter
 
-build with --release tag for deloy. it add "assets/" with var $prefixAsset
-flutter build web --no-tree-shake-icons --release 
+flutter build web --no-tree-shake-icons --release
+manual move all folder in assets/assets to assets/

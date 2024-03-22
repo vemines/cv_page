@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'cv/cv_export.dart';
-import 'shared/shared.dart';
+import 'index/bindings/binding.dart';
+import 'index/views/view.dart';
+import 'shared/languages/language.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,27 +19,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: "VeMines CV",
+      title: "CV",
       debugShowCheckedModeBanner: false,
       // theme
-      theme: ThemeData.light(),
+      theme: ThemeData.light().copyWith(primaryColor: Colors.blueAccent),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.dark,
       // routes
-      initialRoute: "/cv",
+      initialRoute: "/",
       getPages: [
         GetPage(
-          name: "/cv",
-          page: () => const CvView(),
-          binding: CvBinding(),
+          name: "/",
+          page: () => const MainView(),
+          binding: MainBinding(),
         ),
       ],
-
-      unknownRoute: GetPage(
-        name: "/404",
-        page: () => const Page404View(),
-      ),
-
       // language
       translations: AppLanguage(),
       locale: const Locale('en', 'US'),

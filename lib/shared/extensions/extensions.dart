@@ -6,10 +6,6 @@ extension PaddingExtension on num {
   double get scaledPadd => this * 10.0;
 }
 
-extension IndentExtension on String {
-  String get indent => "       $this";
-}
-
 extension SaveToClipboard on String {
   void showToastCopySuccess({required String text}) {
     Get.showSnackbar(
