@@ -17,18 +17,18 @@
  "contact": "CONTACT ME",
  "my_name": "HUỲNH HƯNG PHÁT",
  "my_address": "20/6 Kha Van Can Street, Hiep Binh Chanh Ward, Thu Duc District, Ho Chi Minh City.",
- "my_about": "I am a Flutter developer with expertise in UI/UX design for web and mobile applications. I constantly strive to improve my skills in building intuitive and accessible experiences, ensuring smooth and responsive applications through performance optimization. I using Getx, Bloc for state management in my Flutter projects. Additionally, I using Node.js for backend development, utilizing cloud services like AWS (S3, Cloudfront) and Cloudinary for managing storage and media. I'm actively improve caching data with Redis, learning RabbitMQ to further enhance my backend capabilities.",
- "my_frontend": "Flutter (Android, Web): Building a Responsive Android/Website with Flutter. Using Getx, Bloc at State manager, multi theme/language app",
+ "my_about": "I am a Flutter developer with expertise in UI/UX design for web and mobile applications. I constantly strive to improve my skills in building intuitive and accessible experiences, ensuring smooth and responsive applications through performance optimization. I utilize GetX and Bloc for state management in my Flutter projects. Additionally, I leverage Node.js for backend development, utilizing cloud services like AWS (S3, Cloudfront) and Cloudinary for managing storage and media. I am actively improving my skills in caching data with Redis and learning RabbitMQ to further enhance my backend capabilities.",
+ "my_frontend": "Flutter (Android, Web): Building responsive Android/Web applications with Flutter. Utilizing GetX and Bloc for state management, creating multi-themed and multilingual apps.",
  "my_backend": "NodeJs(Express), Golang (Gin/Gorm), Firebase",
  "my_database": "MongoDB, Mysql, Firestore/Realtime database, Redis",
  "my_school": "Nong Lam University (09/2017 - 06/2022)",
- "my_school_info": "Engineer's Degree of Information Technology with GPA: 2.4/4.0.",
+ "my_school_info": "Bachelor's Degree in Information Technology (GPA: 2.4/4.0)",
  "my_project_1": "vemines.github.io",
  "my_project_1_url": "https://vemines.github.io",
- "my_project_1_info": "A collections Widget, Theme and useful UI package for design beautyful apps",
+ "my_project_1_info":  "A collection of widgets, themes, and useful UI packages to design beautiful apps.",
  "my_project_2": "NodeJS",
  "my_project_2_url": "https://github.com/vemines/NodeJs",
- "my_project_2_info": "General all my knowledge about NodeJs, RestApi for Restfull api, have example for AWS (S3, Cloudfront), Cloudinary, RabbitMQ, And some usecase in real project",
+ "my_project_2_info": "Kho lưu trữ toàn diện thể hiện kiến thức của tôi về Node.js. Nó cung cấp một REST API với nhiều tính năng, các ví dụ sử dụng AWS (S3, Cloudfront), Cloudinary, RabbitMQ và các tình huống thực tế.",
  "my_vision": "Improve backend/frontend optimize.\nUpgrage perfomence/security application.\nLearn more and deep technology\nImprove coding speed and clean code."
   }
 }
