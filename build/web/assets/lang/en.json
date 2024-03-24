@@ -28,7 +28,7 @@
  "my_project_1_info":  "A collection of widgets, themes, and useful UI packages to design beautiful apps.",
  "my_project_2": "NodeJS",
  "my_project_2_url": "https://github.com/vemines/NodeJs",
- "my_project_2_info": "Kho lưu trữ toàn diện thể hiện kiến thức của tôi về Node.js. Nó cung cấp một REST API với nhiều tính năng, các ví dụ sử dụng AWS (S3, Cloudfront), Cloudinary, RabbitMQ và các tình huống thực tế.",
+ "my_project_2_info": "A comprehensive repository showcasing my knowledge of Node.js. It provides a feature-rich REST API, examples of using AWS (S3, Cloudfront), Cloudinary, RabbitMQ, and real-world use cases.",
  "my_vision": "Improve backend/frontend optimize.\nUpgrage perfomence/security application.\nLearn more and deep technology\nImprove coding speed and clean code."
   }
 }

@@ -28,7 +28,7 @@
     "my_project_1_info": "Tổng hợp các Widget, giao diện và thư viện UI/UX để thiết kế ứng dụng.",
     "my_project_2": "NodeJS",
     "my_project_2_url": "https://github.com/vemines/NodeJs",
-    "my_project_2_info": "Tổng hợp kiến thức về NodeJS, bao gồm REST API, ứng dụng AWS (S3, Cloudfront), Cloudinary, RabbitMQ và các trường hợp thực tế.",
+    "my_project_2_info": "Kho lưu trữ toàn diện thể hiện kiến thức của tôi về Node.js. Nó cung cấp một REST API với nhiều tính năng, các ví dụ sử dụng AWS (S3, Cloudfront), Cloudinary, RabbitMQ và các tình huống thực tế.",
     "my_vision": "Cải thiện tối ưu backend/frontend.\nTăng cường Hiệu suất/Bảo mật ứng dụng\nHọc hỏi chuyên sâu những công nghệ mới.\nCải thiện tốc độ code và viết code tốt hơn."
   }
 }
